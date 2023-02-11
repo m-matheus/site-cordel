@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0: white;
+    --cor1: black;
+    --cor1t: rgba(0, 0, 0, 0.548);
+
+    --fonteDestaque: 'Passion One', cursive;
+    --fontePadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fontePoema: 'Sriracha', cursive;
+}
+
+#cabecalho {
+    background-color: var(--cor1);
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.titulo-destaque {
+    font-family: var(--fonteDestaque) ;
+    color: var(--cor0);
+    font-size: 10vw;
+    font-weight: lighter;
+}
+
+header p {
+    color: var(--cor0);
+    font-family: var(--fontePadrao);
+    font-size: 2.5vw;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+   padding-left: 30px;
+   line-height: 7vw;
+   font-family: var(--fontePoema);
+   font-size: 3.8vw;
+}
+
+#img01, #img02 {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+}
+
+#img01 {
+    background: var(--cor0) url(../imagens/background001.jpg) no-repeat fixed center right;
+    background-size: cover;
+    /*background: color > image > reapeat > attachment > position */
+}
+
+#img02 {
+    background: var(--cor0) url(../imagens/background002.jpg) no-repeat fixed center right;
+    /*background: color > image > reapeat > attachment > position */
+}
+
+.imagem p {
+    background-color: var(--cor1t);
+    color: var(--cor0);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.37);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    min-height: 40px;
+    align-items: center;
+    display: flex;
+    font-family: var(--fontePadrao);
+}
